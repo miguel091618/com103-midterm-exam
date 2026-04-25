@@ -45,3 +45,36 @@ for i in range(4):
             "status": status,
             "points": points
         })
+        
+if tasks_assigned > 0:
+    max_points = tasks_assigned * 2
+    progress = int((total_points / max_points) * 100)
+else:
+    max_points = 0
+    progress = 0
+
+if progress >= 75:
+    project_status = "PROJECT READY"
+elif progress >= 50:
+    project_status = "ON TRACK"
+else:
+    project_status = "NEED MORE WORK"
+
+print("\n=====================================")
+print(f"{project_title} -- TASK BOARD")
+print("=====================================")
+print(f"Project Title : {project_title}")
+print(f"Group Name   : {group_name}")
+print("-------------------------------------")
+
+for i in range(len(assigned_tasks)):
+    task = assigned_tasks[i]
+    print(f"Task {i+1}: {task['task_name']} ({task['task_hours']}h)")
+    print(f"     Assigned to   : {task['member']}")
+    print(f"     Status        : {task['status']}")
+    print(f"     Points        : {task['points']} / 2")
+print("-------------------------------------")
+print(f"Total Points Earned    : {total_points} / {max_points}")
+print(f"Progress               : {int(progress)}%")
+print(f"Project Status         : {project_status}")
+print("=====================================")
