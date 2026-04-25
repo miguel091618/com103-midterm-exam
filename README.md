@@ -1,5 +1,6 @@
-# com103-midterm-exam
-# description
+com103-midterm-exam
+
+description
 This Python program is a simple task management and progress tracker for group projects. It allows users to assign tasks to members, track their completion status, and calculate overall project progress.
 
 How to run:
