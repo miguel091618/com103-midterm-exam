@@ -11,3 +11,7 @@ Extract the ZIP file
 find the file using cd command
 Open terminal / command prompt or vscode
 Run command: python midterm_solution.py
+
+
+AUTHOR : MAGNO, JOSE ENRICO MIGUEL J. BSIT 1C
+04/25/26
